@@ -24,6 +24,6 @@ body {
 .content {
     padding: 10px;
     text-align: center;
-    margin: 90px auto;
+    margin: 40px auto;
     max-width: 750px; /* Max width should do the trick */
 }
