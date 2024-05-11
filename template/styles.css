@@ -10,7 +10,7 @@ body {
     background-color: #460072;
     color: #ffffff;
     text-align: center;
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
 .top-bar h1 {
@@ -24,5 +24,6 @@ body {
 .content {
     padding: 10px;
     text-align: center;
-    margin: 20px 150px; /* css is confusing */
+    margin: 90px auto;
+    max-width: 500px; /* Max width should do the trick */
 }
