@@ -9,17 +9,26 @@
             background-color: #01010F;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             font-family: Arial, sans-serif;
+            color: #4799DB;
         }
 
-        .container {
+        /* Fullscreen container */
+        .fullscreen-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        /* ASCII art and additional text container */
+        .ascii-container {
             text-align: center;
-            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         #ascii-art {
@@ -35,8 +44,10 @@
             overflow: hidden;
         }
 
+        /* Additional text */
         .additional-text {
-            color: #4799DB;
+            margin-top: 20px;
+            font-size: 16px;
         }
 
         .additional-text a {
@@ -49,33 +60,18 @@
             color: #6F2DCD;
         }
 
-        /* Fullscreen container */
-        .fullscreen-container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #4799DB;
-            font-size: 24px;
-        }
-
-        /* Additional text container */
-        .additional-text {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #4799DB;
-            font-size: 24px;
+        /* Extra text div */
+        .extra-text {
+            margin-top: 20px;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
     <!-- Fullscreen container -->
     <div class="fullscreen-container">
-        <textarea id="ascii-art" readonly>
+        <div class="ascii-container">
+            <textarea id="ascii-art" readonly>
  ___   ___   ________     ______  ______   __          
 /__/\ /__/\ /_______/\   /_____/\/_____/\ /_/\         
 \::\ \\  \ \\::: _  \ \  \:::__\/\::::_\/_\:\ \        
@@ -84,13 +80,17 @@
    \: \ \\::\ \\:.\ \  \ \/_:/____/\\:\____/\\:\/___/\ 
     \__\/ \::\/ \__\/\__\/\_______\/ \_____\/ \_____\/ 
                                                      
-        </textarea>
+            </textarea>
+            <div class="additional-text">
+                <p>Well hai~! I'm Hazel! <br> I make things in <a href="https://penguinmod.com">PenguinMod</a>, and sometimes in Godot!
+                <br> Oh, and I have a <a href="blog/">blog!</a></p>
+            </div>
+        </div>
     </div>
     
-    <!-- Additional text container -->
-    <div class="additional-text">
-        <p>Well hai~! I'm Hazel! <br> I make things in <a href="https://penguinmod.com">PenguinMod</a>, and sometimes in Godot!
-        <br> Oh, and I have a <a href="blog/">blog!</a></p>
+    <!-- Extra text div -->
+    <div class="extra-text">
+        <p>Hazel do stuff</p>
     </div>
 
     <script>
