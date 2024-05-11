@@ -28,9 +28,17 @@
             border: none;
             outline: none;
             resize: none;
-            width: 600px;
+            width: 90%; /* Mobile issue, won't fix */
+            max-width: 600px; /* Mobile issue, won't fix */
             height: 300px;
             overflow: hidden;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* Yeah that's a mobile issue */
+            #ascii-art {
+                font-size: 14px; /* Ok fine I fixed it */
+            }
         }
     </style>
 </head>
@@ -49,3 +57,4 @@
     </div>
 </body>
 </html>
+
