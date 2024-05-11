@@ -10,7 +10,7 @@ body {
     background-color: #460072;
     color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .top-bar h1 {
@@ -22,7 +22,7 @@ body {
 }
 
 .content {
-    padding: 20px;
+    padding: 50px;
     text-align: center;
-    margin: 50px; /* css is weird sometines */
+    margin: 80px; /* Is this too much? */
 }
