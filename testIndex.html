@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hazel != not a dev</title>
+    <style>
+        body {
+            background-color: #01010F;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fullscreen container */
+        .fullscreen-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #4799DB;
+            font-size: 24px;
+        }
+
+        /* Additional text container */
+        .additional-text {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #4799DB;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fullscreen container -->
+    <div class="fullscreen-container">
+        <textarea id="ascii-art" readonly>
+ ___   ___   ________     ______  ______   __          
+/__/\ /__/\ /_______/\   /_____/\/_____/\ /_/\         
+\::\ \\  \ \\::: _  \ \  \:::__\/\::::_\/_\:\ \        
+ \::\/_\ .\ \\::(_)  \ \    /: /  \:\/___/\\:\ \       
+  \:: ___::\ \\:: __  \ \  /::/___ \::___\/_\:\ \____  
+   \: \ \\::\ \\:.\ \  \ \/_:/____/\\:\____/\\:\/___/\ 
+    \__\/ \::\/ \__\/\__\/\_______\/ \_____\/ \_____\/ 
+                                                     
+        </textarea>
+    </div>
+    
+    <!-- Additional text container -->
+    <div class="additional-text">
+        <p>Well hai~! I'm Hazel! <br> I make things in <a href="https://penguinmod.com">PenguinMod</a>, and sometimes in Godot!
+        <br> Oh, and I have a <a href="blog/">blog!</a></p>
+    </div>
+
+    <script>
+        // Check if the device is mobile and adjust the width of the ASCII art textarea accordingly
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        if (isMobileDevice()) {
+            document.getElementById("ascii-art").style.width = "90%";
+        }
+    </script>
+</body>
+</html>
