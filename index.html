@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column; /* Element go vertical */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -19,7 +19,7 @@
 
         .container {
             text-align: center;
-            margin-bottom: 20px; /* SPAAAAAAAAAAACE */
+            margin-bottom: 20px;
         }
 
         #ascii-art {
@@ -36,7 +36,17 @@
         }
 
         .additional-text {
-            color: #4799DB; /* we want color */
+            color: #4799DB;
+        }
+
+        .additional-text a {
+            color: #66A9E0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .additional-text a:hover {
+            color: #1E86DA;
         }
     </style>
 </head>
@@ -61,12 +71,10 @@
     </div>
 
     <script>
-        // Mobile issue
         function isMobileDevice() {
             return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
         }
 
-        // We are fixing the mobile issue for some reason
         if (isMobileDevice()) {
             document.getElementById("ascii-art").style.width = "90%";
         }
