@@ -26,9 +26,14 @@ body {
 }
 
 .blog-post a {
-    color: #E1B2FF; /* pupel */
+    color: #DAAFF6;
+    transition: color 0.3s;
+}
+
+.blog-post a:hover {
+    color: #BE59FF;
 }
 
 .blog-post p {
-    margin-bottom: 0;
+    margin-bottom: 0; /* hover effect cause i like being fancy ^^ */
 }
