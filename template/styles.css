@@ -7,7 +7,7 @@ body {
 }
 
 .top-bar {
-    background-color: #13011F;
+    background-color: #460072;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
@@ -23,4 +23,5 @@ body {
 
 .content {
     padding: 20px;
+    text-align: center; /* Center-align the content */
 }
