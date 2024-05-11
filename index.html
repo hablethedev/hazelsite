@@ -9,17 +9,27 @@
             background-color: #01010F;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             font-family: Arial, sans-serif;
+            color: #4799DB;
         }
 
-        .container {
+        /* Fullscreen container */
+        .fullscreen-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            flex-direction: column;
+        }
+
+        /* ASCII art and additional text container */
+        .ascii-container {
             text-align: center;
-            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         #ascii-art {
@@ -35,8 +45,10 @@
             overflow: hidden;
         }
 
+        /* Additional text */
         .additional-text {
-            color: #4799DB;
+            margin-top: 20px;
+            font-size: 16px;
         }
 
         .additional-text a {
@@ -48,11 +60,33 @@
         .additional-text a:hover {
             color: #6F2DCD;
         }
+
+        /* Second part div */
+        .secondpart {
+            margin-top: 20px;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #020219;
+            height: 5vh;
+            display: flex;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #15021D;
+            color: #E19AFF;
+            text-align: center;
+            padding: 10px 0;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <textarea id="ascii-art" readonly>
+    <!-- Fullscreen container -->
+    <div class="fullscreen-container">
+        <div class="ascii-container">
+            <textarea id="ascii-art" readonly>
  ___   ___   ________     ______  ______   __          
 /__/\ /__/\ /_______/\   /_____/\/_____/\ /_/\         
 \::\ \\  \ \\::: _  \ \  \:::__\/\::::_\/_\:\ \        
@@ -61,17 +95,28 @@
    \: \ \\::\ \\:.\ \  \ \/_:/____/\\:\____/\\:\/___/\ 
     \__\/ \::\/ \__\/\__\/\_______\/ \_____\/ \_____\/ 
                                                      
-        </textarea>
+            </textarea>
+            <div class="additional-text">
+                <p>Well hai~! I'm Hazel! <br> I make things in <a href="https://penguinmod.com">PenguinMod</a>, and sometimes in Godot!
+                <br> Oh, and I have a <a href="blog/">blog!</a><br><a href="other/">Here's</a> some misc stuff!</p>
+            </div>
+        </div>
     </div>
     
-    <div class="container">
-        <div class="additional-text">
-            <p>Well hai~! I'm Hazel! <br> I make things in <a href="https://penguinmod.com">PenguinMod</a>, and sometimes in Godot!
-            <br> Oh, and I have a <a href="blog/">blog!</a></p>
+    <!-- Second part div -->
+    <div class="secondpart">
+        <div class="extra-text">
+            <p>Your local transgender lesbian that kind of knows how to code! <br> I know some Python, GDScript, and ALOT of Scratch/PenguinMod. </p>
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer>
+        Hazel &copy; 2024-present. You may fork this project, however not for commercial use.
+    </footer>
+
     <script>
+        // Check if the device is mobile and adjust the width of the ASCII art textarea accordingly
         function isMobileDevice() {
             return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
         }
