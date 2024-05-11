@@ -18,7 +18,6 @@
 
         .container {
             text-align: center;
-            padding: 0 20px; /* Add padding to the container */
         }
 
         #ascii-art {
@@ -29,18 +28,9 @@
             border: none;
             outline: none;
             resize: none;
-            width: 100%; /* Take up full width of container */
-            max-width: 600px; /* Added maximum width for larger screens */
+            width: 600px;
             height: 300px;
             overflow: hidden;
-            box-sizing: border-box; /* Include padding and border in width */
-        }
-
-        @media screen and (max-width: 600px) {
-            /* Adjustments for smaller screens */
-            #ascii-art {
-                font-size: 14px; /* Decreased font size */
-            }
         }
     </style>
 </head>
@@ -57,5 +47,18 @@
                                                      
         </textarea>
     </div>
+
+    <script>
+        // Mobile issue
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        // We are fixing hte mobile issue for some reason
+        if (isMobileDevice()) {
+            document.getElementById("ascii-art").style.width = "90%";
+        }
+    </script>
 </body>
 </html>
+
