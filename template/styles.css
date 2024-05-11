@@ -23,5 +23,6 @@ body {
 
 .content {
     padding: 20px;
-    text-align: center; /* Center-align the content */
+    text-align: center;
+    margin: 10px; /* css is weird sometines */
 }
