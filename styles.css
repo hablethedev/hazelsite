@@ -15,14 +15,18 @@ body {
 .blog-post {
     background-color: #A972CC;
     color: #ffffff;
-    padding: 50px;
-    margin: 50px;
+    padding: 30px;
+    margin: 30px;
     border-radius: 10px;
 }
 
 .blog-post h2 {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.blog-post a {
+    color: #DAAFF6; /* pupel */
 }
 
 .blog-post p {
