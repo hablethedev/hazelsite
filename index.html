@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column; /* Element go vertical */
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -18,6 +19,7 @@
 
         .container {
             text-align: center;
+            margin-bottom: 20px; /* SPAAAAAAAAAAACE */
         }
 
         #ascii-art {
@@ -31,6 +33,10 @@
             width: 600px;
             height: 300px;
             overflow: hidden;
+        }
+
+        .additional-text {
+            color: #4799DB; /* we want color */
         }
     </style>
 </head>
@@ -47,6 +53,12 @@
                                                      
         </textarea>
     </div>
+    
+    <div class="container">
+        <div class="additional-text">
+            <p>Well hai!</p>
+        </div>
+    </div>
 
     <script>
         // Mobile issue
@@ -54,11 +66,10 @@
             return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
         }
 
-        // We are fixing hte mobile issue for some reason
+        // We are fixing the mobile issue for some reason
         if (isMobileDevice()) {
             document.getElementById("ascii-art").style.width = "90%";
         }
     </script>
 </body>
 </html>
-
