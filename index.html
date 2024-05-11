@@ -18,7 +18,7 @@
 
         .container {
             text-align: center;
-            padding: 0 20px; /* comment */
+            padding: 0 20px; /* Add padding to the container */
         }
 
         #ascii-art {
@@ -29,11 +29,11 @@
             border: none;
             outline: none;
             resize: none;
-            width: calc(100% - 40px); /* lol */
-            max-width: 600px; /* mobile issue? */
+            width: 100%; /* Take up full width of container */
+            max-width: 600px; /* Added maximum width for larger screens */
             height: 300px;
             overflow: hidden;
-            box-sizing: border-box; /* Issue because mobile :haha: */
+            box-sizing: border-box; /* Include padding and border in width */
         }
 
         @media screen and (max-width: 600px) {
@@ -59,4 +59,3 @@
     </div>
 </body>
 </html>
-
