@@ -37,3 +37,9 @@ body {
 .blog-post p {
     margin-bottom: 0; /* hover effect cause i like being fancy ^^ */
 }
+
+/* Special link style */
+.special-link {
+    text-decoration: underline;
+    color: inherit; /* Inherit color from parent */
+}
