@@ -22,7 +22,7 @@ body {
 }
 
 .content {
-    padding: 10px;
-    text-align: center;
-    margin: 160px; /* Is this too much? */
+    padding: 20px;
+    text-align: center; 
+    margin: 90px; /* Hmmm */
 }
