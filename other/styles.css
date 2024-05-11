@@ -1,0 +1,15 @@
+body {
+  background-color: #01010F;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #4799DB
+  }
+.link {
+  color: #98C7EE;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.link:hover {
+  color: #6F2DCD;
+}
